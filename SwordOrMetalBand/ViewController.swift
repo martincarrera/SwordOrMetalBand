@@ -19,10 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
         
-        let element = Element(withId: 0, name: "Longclaw", type: .Sword, description: "Jon Snow sword")
-        self.currentObject = element.id
-        self.nameLabel.text = element.name
-        self.elements.append(element)
+        self.elements = self.getElements()
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -48,6 +45,15 @@ class ViewController: UIViewController {
             title = "Ups..."
         }
         self.popViewController!.showInView(self.view, withImage: image, title: title, description: self.elements[self.currentObject].description, animated: true)
+    }
+    
+    func getElements() -> [Element]{
+        var elements = [Element]()
+        let element = Element(withId: 0, name: "Longclaw", type: .Sword, description: "Jon Snow sword")
+        self.currentObject = element.id
+        self.nameLabel.text = element.name
+        elements.append(element)
+        return elements
     }
 }
 
