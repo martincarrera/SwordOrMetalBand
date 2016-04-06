@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController" customModule="SwordOrMetalBand" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="Avv-p0-Y4s" id="UUn-we-MvQ"/>
+                <outlet property="imageView" destination="JzK-po-k8c" id="oLa-WM-Qcn"/>
+                <outlet property="popUpView" destination="MWO-aF-PD0" id="wjT-h0-ixi"/>
+                <outlet property="titleLabel" destination="G7R-Yb-7yf" id="hur-ZQ-3Z9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="80R-fQ-yNa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWO-aF-PD0">
+                    <rect key="frame" x="38" y="126" width="300" height="415"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel" translatesAutoresizingMaskIntoConstraints="NO" id="JzK-po-k8c">
+                            <rect key="frame" x="100" y="48" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="UV7-eC-9TM"/>
+                                <constraint firstAttribute="height" constant="100" id="zzK-J7-hzp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ups..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-Yb-7yf">
+                            <rect key="frame" x="8" y="156" width="284" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="0lc-Xn-gmz"/>
+                                <constraint firstAttribute="width" constant="284" id="5y9-DH-hrr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avv-p0-Y4s">
+                            <rect key="frame" x="8" y="221" width="284" height="151"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="284" id="89Q-sM-WPr"/>
+                                <constraint firstAttribute="height" constant="151" id="DM5-KW-FMp"/>
+                            </constraints>
+                            <string key="text">Widow's Wail is the second Valyrian steel blade made from Ice, the blade of House Stark. It is given by Tywin Lannister as a wedding gift to his grandson King Joffrey Baratheon at the breakfast prior to the wedding ceremony. Its sister blade is Oathkeeper.</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPu-La-nBr">
+                            <rect key="frame" x="100" y="377" width="100" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Mxc-1P-dkq"/>
+                                <constraint firstAttribute="height" constant="30" id="ez4-cn-O8k"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal" title="Close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="GaN-p4-ir0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Avv-p0-Y4s" firstAttribute="top" secondItem="G7R-Yb-7yf" secondAttribute="bottom" constant="8" id="0Z4-uM-K6W"/>
+                        <constraint firstItem="MPu-La-nBr" firstAttribute="top" secondItem="Avv-p0-Y4s" secondAttribute="bottom" constant="-1" id="39m-3B-Sri"/>
+                        <constraint firstAttribute="bottom" secondItem="MPu-La-nBr" secondAttribute="bottom" constant="8" id="4Bt-HP-yW1"/>
+                        <constraint firstAttribute="width" constant="300" id="74H-hL-Twf"/>
+                        <constraint firstItem="G7R-Yb-7yf" firstAttribute="centerX" secondItem="JzK-po-k8c" secondAttribute="centerX" id="Ccm-eE-Zpq"/>
+                        <constraint firstItem="G7R-Yb-7yf" firstAttribute="top" secondItem="JzK-po-k8c" secondAttribute="bottom" constant="8" id="FmV-UO-yBI"/>
+                        <constraint firstAttribute="height" constant="415" id="PPh-4a-e9l"/>
+                        <constraint firstItem="MPu-La-nBr" firstAttribute="centerX" secondItem="Avv-p0-Y4s" secondAttribute="centerX" id="gPz-OM-IiG"/>
+                        <constraint firstItem="JzK-po-k8c" firstAttribute="top" secondItem="MWO-aF-PD0" secondAttribute="top" constant="48" id="j7b-Dr-xuK"/>
+                        <constraint firstItem="Avv-p0-Y4s" firstAttribute="centerX" secondItem="G7R-Yb-7yf" secondAttribute="centerX" id="qMm-iP-oqA"/>
+                        <constraint firstItem="MPu-La-nBr" firstAttribute="top" secondItem="Avv-p0-Y4s" secondAttribute="bottom" constant="-1" id="rca-uf-cHJ"/>
+                        <constraint firstItem="JzK-po-k8c" firstAttribute="centerX" secondItem="MWO-aF-PD0" secondAttribute="centerX" id="snC-aS-5IO"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="39m-3B-Sri"/>
+                            <exclude reference="rca-uf-cHJ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MWO-aF-PD0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aub-Bb-F1b"/>
+                <constraint firstItem="MWO-aF-PD0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vzO-NM-5TX"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="100" height="100"/>
+    </resources>
+</document>

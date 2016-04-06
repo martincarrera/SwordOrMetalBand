@@ -1,25 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwordOrMetalBand" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIl-hI-wJI">
+                                <rect key="frame" x="32" y="460" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4v4-eI-3kc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Sword">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="swordButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="FB3-wG-awQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGN-BC-jDt">
+                                <rect key="frame" x="243" y="460" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dPs-Uc-XRw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Metal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="metalButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3er-3e-es7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-dE-Dcl">
+                                <rect key="frame" x="32" y="352" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TBz-Fr-6Im"/>
+                                    <constraint firstAttribute="width" constant="100" id="aTI-h4-kec"/>
+                                </constraints>
+                                <state key="normal" image="Sword"/>
+                                <connections>
+                                    <action selector="swordButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDL-oN-L6O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-4b-p0X">
+                                <rect key="frame" x="243" y="352" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1F3-Tk-FeA"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zgf-xv-4Kt"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Metal Music"/>
+                                <connections>
+                                    <action selector="metalButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ean-JC-4AV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oath Keeper" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIg-rK-9zq">
+                                <rect key="frame" x="32" y="110" width="311" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Ph6-yr-7Ui"/>
+                                    <constraint firstAttribute="width" constant="311" id="wWC-9h-2xr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="yyy-dE-Dcl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="6MF-kH-Fsh"/>
+                            <constraint firstItem="yyy-dE-Dcl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="332" id="Cgt-G5-YXV"/>
+                            <constraint firstItem="AIl-hI-wJI" firstAttribute="centerX" secondItem="yyy-dE-Dcl" secondAttribute="centerX" id="IeQ-Ub-CUx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SF7-4b-p0X" secondAttribute="trailing" constant="16" id="ZW4-Ll-UUV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yyy-dE-Dcl" secondAttribute="leading" constant="-16" id="hYn-f9-7Sl"/>
+                            <constraint firstItem="SF7-4b-p0X" firstAttribute="centerY" secondItem="yyy-dE-Dcl" secondAttribute="centerY" id="joU-m4-hK1"/>
+                            <constraint firstItem="bGN-BC-jDt" firstAttribute="centerY" secondItem="AIl-hI-wJI" secondAttribute="centerY" id="nUS-WY-TV2"/>
+                            <constraint firstItem="vIg-rK-9zq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="nZb-1h-mwJ"/>
+                            <constraint firstItem="bGN-BC-jDt" firstAttribute="centerX" secondItem="SF7-4b-p0X" secondAttribute="centerX" id="vyu-aj-k4m"/>
+                            <constraint firstItem="AIl-hI-wJI" firstAttribute="top" secondItem="yyy-dE-Dcl" secondAttribute="bottom" constant="8" id="yFe-kw-PNt"/>
+                            <constraint firstItem="vIg-rK-9zq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zbV-0I-uRh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hYn-f9-7Sl"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="vIg-rK-9zq" id="aER-w8-n7h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="548.5" y="490.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Metal Music" width="100" height="100"/>
+        <image name="Sword" width="100" height="100"/>
+    </resources>
 </document>
