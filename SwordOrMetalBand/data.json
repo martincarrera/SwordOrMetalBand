@@ -1,7 +1,34 @@
- [  {
-        id: 1,
-        name: "Longclaw",
-        type: "Sword",
-        description: "Longclaw is a Valyrian steel sword, in the possession of House Mormont for five centuries. When Lord Jeor Mormont retired from his lordship to take the black and command the Night's Watch, he passed it to his son and heir, Ser Jorah Mormont. When Jorah went into exile after trying to sell some poachers into slavery, he had the sword sent back to his father on the Wall. \nYears later, Jeor gave Longclaw to Jon Snow as a reward for saving his life from a wight. Before giving it to Jon he had the pommel remade, replacing the bear with a direwolf, the sigil of House Stark. \nLongclaw is a bastard sword (also known as a 'Hand-and-a-half sword'), which is longer than a longsword, but shorter than a greatsword. Greatswords are so large that they can only be wielded using both hands, preventing usage of a shield. Bastard swords can be used with one or two hands: while they are larger than longswords they are short enough that they can still be wielded with one hand, though it is preferable to use two hands."
-    }
-  ]
+[
+   {
+        "id": 0,
+        "name": "Longclaw",
+        "type": "Sword",
+        "description": "Longclaw is a Valyrian steel sword, in the possession of House Mormont for five centuries. \n \n Lord Jeor Mormont gave Longclaw to Jon Snow as a reward for saving his life from a wight. Before giving it to Jon he had the pommel remade, replacing the bear with a direwolf, the sigil of House Stark."
+    },
+    {
+        "id": 1,
+        "name": "Ice",
+        "type": "Sword",
+        "description": "Ice was a Valyrian steel greatsword and an heirloom of House Stark. It was used both in war and on ceremonial occasions by the Lord of Winterfell."
+    },
+    {
+        "id": 2,
+        "name": "Dark Sister",
+        "type": "Sword",
+        "description": "Dark Sister was the name of the Valyrian steel sword belonging to Visenya Targaryen, the sister-wife of Aegon the Conqueror. A great warrior, she used it in battle as well as riding her dragon during the War of Conquest. The sword was ultimately lost during the Blackfyre Rebellion."
+    },
+    {
+        "id": 3,
+        "name": "Battleaxe",
+        "type": "Metal",
+        "description": "Battleaxe is a heavy metal band from Sunderland, England. As one of the notable bands of the New Wave of British Heavy Metal scene, they started out with the name Warrior and morphed into Battleaxe sometime in early 1980."
+    },
+    {
+        "id": 4,
+        "name": "Black Death",
+        "type": "Metal",
+        "description": "Black Death are an American band who have been noted as the \"first all-African-American heavy metal band.\" The group were also mentioned in Ian Christe's book Sound of the Beast: The Complete Headbanging History of Heavy Metal., and mentioned Rock 'n' roll and the Cleveland connection by Deanna R. Adams as \"one of the only, if not the only, all-black metal bands in the country\" in 1987."
+    },
+
+ 
+ ]

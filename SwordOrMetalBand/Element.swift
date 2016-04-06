@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum Type {
-    case Sword, Metal
+enum Type: String {
+    case Sword = "Sword"
+    case Metal = "Metal"
 }
 
 class Element {

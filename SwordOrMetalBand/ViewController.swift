@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -18,8 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
-        
-        self.elements = self.getElements()
+        self.elements = DataHandler.getElements()
+        self.nextElement()
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -28,10 +29,12 @@ class ViewController: UIViewController {
     
     @IBAction func swordButtonPressed() {
         self.showAnswer(.Sword)
+        self.nextElement()
     }
     
     @IBAction func metalButtonPressed() {
         self.showAnswer(.Metal)
+        self.nextElement()
     }
     
     func showAnswer(type: Type){
@@ -47,13 +50,14 @@ class ViewController: UIViewController {
         self.popViewController!.showInView(self.view, withImage: image, title: title, description: self.elements[self.currentObject].description, animated: true)
     }
     
-    func getElements() -> [Element]{
-        var elements = [Element]()
-        let element = Element(withId: 0, name: "Longclaw", type: .Sword, description: "Jon Snow sword")
-        self.currentObject = element.id
-        self.nameLabel.text = element.name
-        elements.append(element)
-        return elements
+    func nextElement(){
+        var nextObject: Int!
+        repeat {
+            nextObject = Int(arc4random_uniform(UInt32(self.elements.count)))
+        } while (nextObject == self.currentObject)
+        self.currentObject = nextObject
+        self.nameLabel.text = elements[currentObject].name
     }
+    
 }
 

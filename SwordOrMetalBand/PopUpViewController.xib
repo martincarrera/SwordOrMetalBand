@@ -39,7 +39,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avv-p0-Y4s">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avv-p0-Y4s">
                             <rect key="frame" x="8" y="221" width="284" height="151"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="284" id="89Q-sM-WPr"/>
@@ -65,7 +65,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="Avv-p0-Y4s" firstAttribute="top" secondItem="G7R-Yb-7yf" secondAttribute="bottom" constant="8" id="0Z4-uM-K6W"/>
                         <constraint firstItem="MPu-La-nBr" firstAttribute="top" secondItem="Avv-p0-Y4s" secondAttribute="bottom" constant="-1" id="39m-3B-Sri"/>
